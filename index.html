@@ -1,8 +1,19 @@
 <?doctype html>
 <head>
 	<title>SimpleSample</title>
+	<script src="js/jquery-1.10.1.min.js"></script>
 </head>
 <body>
 	<button id="doit">Do It</button>
+	<button id="clear">Clear</button>
+	<div id="result"></div>
+<script>
+$('#doit').click(function(){
+	$('#result').html(Date());		
+});
+$('#clear').click(function(){
+	$('#result').html('');		
+});
+</script>
 </body>
 </html>
